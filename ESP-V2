@@ -231,3 +231,11 @@ local function DisablePlayerESP()
         UnloadPlayer(v)
     end
 end
+
+Section:NewToggle("Вкл/выкл ESP на игроков", "Вкл/выкл ESP на игроков", function(ESP)
+    if ESP then
+        EnablePlayerESP()
+    else
+        DisablePlayerESP()
+    end
+end)
