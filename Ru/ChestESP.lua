@@ -125,11 +125,3 @@ local function DisableChestESP()
         end
     end
 end
-
-Section:NewToggle("Вкл/Выкл ESP на сундуки", "Вкл/Выкл ESP на сундуки", function(CESP)
-    if CESP then
-        EnableChestESP()
-    else
-        DisableChestESP()
-    end
-end)
